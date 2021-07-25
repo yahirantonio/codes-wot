@@ -1,0 +1,1 @@
+(()=>{"use strict";(function(){var o=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"";console.log(o)})("hola mundo")})();
