@@ -2,6 +2,10 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+//npx webpack --profile --json > stats.json
+//npx webpack-bundle-analyzer stats.json
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 
 module.exports = {
   // Entry nos permite decir el punto de entrada de nuestra aplicación
@@ -56,6 +60,7 @@ module.exports = {
       new MiniCssExtractPlugin({
         filename: "[name].[contenthash].css"
       }),
+      new BundleAnalyzerPlugin()
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),

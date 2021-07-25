@@ -6,7 +6,8 @@
   "scripts": {
     "build": "webpack --config webpack.config.production.js",
     "dev": "webpack --config webpack.config.js",
-    "start": "webpack serve --config webpack.config.js"
+    "start": "webpack serve --config webpack.config.js",
+    "build:analyze": "webpack --config webpack.config.production.js --analyze"
   },
   "keywords": [],
   "author": "",
@@ -24,6 +25,7 @@
     "stylus-loader": "^6.1.0",
     "terser-webpack-plugin": "^5.1.4",
     "webpack": "^5.46.0",
+    "webpack-bundle-analyzer": "^4.4.2",
     "webpack-cli": "^4.7.2",
     "webpack-dev-server": "^3.11.2"
   }
