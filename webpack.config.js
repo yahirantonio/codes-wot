@@ -1,8 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const TerserPlugin = require('terser-webpack-plugin');
 
 
 module.exports = {
@@ -17,6 +15,8 @@ module.exports = {
     filename: "[name].[contenthash].js",
     clean:true
   },
+  mode: "development",
+  devtool: "source-map",
   resolve: {
     // Aqui ponemos las extensiones que tendremos en nuestro proyecto para webpack los lea
     extensions: [".js", ".mjs"],
@@ -56,12 +56,5 @@ module.exports = {
       new MiniCssExtractPlugin({
         filename: "[name].[contenthash].css"
       }),
-  ],
-  optimization:{
-    minimize: true,
-    minimizer: [
-      new CssMinimizerPlugin(),
-      new TerserPlugin()
-    ]
-  }
+  ]
 }
