@@ -1,6 +1,6 @@
 # baseWebpack
 
-These are basic configuration to webpack, in commits before there is a version with a unique webpack.config.js
+These are basic settings for webpack, in previous commits there is a version with a single webpack.config.js
 
 This project has the following settings
 
