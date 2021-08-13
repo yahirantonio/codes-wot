@@ -5,7 +5,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 //npx webpack --profile --json > stats.json
 //npx webpack-bundle-analyzer stats.json
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
->>>>>>> twofiles
 
 
 module.exports = {
@@ -61,10 +60,7 @@ module.exports = {
       new MiniCssExtractPlugin({
         filename: "[name].[contenthash].css"
       }),
-<<<<<<< HEAD
-  ]
-=======
-      new BundleAnalyzerPlugin()
+        // new BundleAnalyzerPlugin()
   ],
   devServer: {
     contentBase: path.join(__dirname, 'dist'),
@@ -72,5 +68,4 @@ module.exports = {
     historyApiFallback: true,
     port: 3000,
   }
->>>>>>> twofiles
 }

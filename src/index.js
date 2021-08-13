@@ -1,3 +1,5 @@
-import saludo from './js/saludojs.mjs'
-import './styles/main.css'
-saludo("hola mundo");
+import getData from './js/getData.js';
+
+import './styles/main.css';
+
+getData();
