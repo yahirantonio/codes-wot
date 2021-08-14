@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # baseWebpack
 
 These are basic settings for webpack, in previous commits there is a version with a single webpack.config.js
@@ -99,3 +100,7 @@ module.exports = {
   }
 }
 ```
+=======
+# codes-wot
+basic program to descifrare codes from world of tanks blitz
+>>>>>>> 1d9e46f6f4923ceff2c295da973ebc941e5ab709
